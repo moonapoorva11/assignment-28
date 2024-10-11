@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb chnager</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;
+            margin-top: 10px;
+        }
+        .mainbox{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            border-radius: 7px;
+            margin: 0 auto;
+            margin-top: 20px;
+            
+        }
+        .mainbox img{
+            padding: 5px;
+        }
+        .btn{
+            padding: 5px 17px;
+            background-color: black;
+            border: none;
+            color: white;
+            font-size: 15px;
+            margin-left: 5px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bulb chnager</h1>
+
+    <div class="mainbox">
+        <img src="yellow_bulb.png" height="300px" width="300px" id="bulbimg">
+
+        <button class="btn" onclick="blueBulb()">Blue</button>
+        <button class="btn" onclick="greenBulb()">Green</button>
+        <button class="btn" onclick="pinkBulb()">Pink</button>
+        <button class="btn" onclick="redBulb()">Red</button>
+    </div>
+
+    <script>
+      let bulbimg =  document.getElementById("bulbimg");
+      function blueBulb(){
+        bulbimg.src = "blue_bulb.jpeg";
+
+      }
+      function greenBulb(){
+        bulbimg.src = "green_bulb.jpeg"; 
+    }
+
+    function pinkBulb(){
+        bulbimg.src = "pink bulb.jpeg";  
+    }
+
+    function redBulb(){
+        bulbimg.src = "red bulb.png"; 
+    }
+
+
+    </script>
+    
+</body>
+</html>

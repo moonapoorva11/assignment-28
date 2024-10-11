@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Season switcher</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;
+            margin-top: 10px;
+        }
+        .mainbox{
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+            margin: 0 auto;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+         .btn{
+            padding: 5px 15px;
+           border-radius: 7px;
+            border: none;
+            font-size: 15px;
+            background-color: black;
+            color: white;
+            margin-left: 25px;
+            margin-top: 50x;
+        } 
+         .mainbox img{
+            padding: 10px;
+        }
+        
+        .btn:hover{
+            background-color: rgb(90, 85, 85);
+            transition: 0.3s;
+        }       
+    </style>
+</head>
+<body>
+    <h1>Season Switcher</h1>
+    <div class="mainbox">
+        <img src="spring.jpg" height="400px" width="400px" id="seasonimg"/>
+       
+        <button class="btn" onclick="summerSeason()">Summer</button>
+        <button class="btn" onclick="winterSeason()">Winter</button>
+        <button class="btn" onclick="monsoonSeason()">monsoon</button>
+     </div>
+
+<script>
+let image = document.getElementById("seasonimg");
+function summerSeason(){
+        image.src = "summer.jpg"
+
+}
+ function winterSeason(){
+        image.src = "winter.jpg";
+
+    }
+ function monsoonSeason(){
+    image.src = " rainy.jpg";
+         }
+</script>
+    
+</body>
+</html>
